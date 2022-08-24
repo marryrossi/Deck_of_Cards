@@ -21,4 +21,7 @@ function usedDeck() {
     const myDeck = newDeck().then((deck) => {
         console.log(deck)
     });
-}
+};
+
+// Elements reference
+const $newDeckBtn = $('#new-deck-btn');
