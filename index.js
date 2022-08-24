@@ -25,3 +25,6 @@ function usedDeck() {
 
 // Elements reference
 const $newDeckBtn = $('#new-deck-btn');
+
+// Event listener
+$newDeckBtn.on('click', newDeck);
