@@ -16,3 +16,9 @@ async function newDeck() {
     console.log(deck)
     return deck;
 };
+
+function usedDeck() {
+    const myDeck = newDeck().then((deck) => {
+        console.log(deck)
+    });
+}
