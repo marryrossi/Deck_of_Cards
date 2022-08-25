@@ -19,8 +19,8 @@ async function newDeck() {
 
 // Elements reference
 const $newDeckBtn = $('#new-deck-btn');
+const $dealCardsBtn = $('#deal-cards-btn');
 
 // Event listener
 $newDeckBtn.on('click', newDeck);
-
-
+$dealCardsBtn.on('click', dealCards);
