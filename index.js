@@ -1,10 +1,3 @@
-
-// Get brand new deck
-
-// Draw Cards
-
-// Reshuffle Cards
-
 let globalDeck; // Defining global variable with null value
 
 
@@ -54,28 +47,3 @@ const $cardSelection = document.querySelector('#cards-container');
 // Event listener
 $newDeckBtn.on('click', newDeck);
 $dealCardsBtn.on('click', dealCards);
-
-
-
-
-
-// function renderDeck(deck)
-// {
-//       document.getElementById("deck").innerHTML = "";
-
-// 	for(let i = 0; i < deck.length; i++)
-// 	{
-// 		let card = document.createElement("div");
-// 		let value = document.createElement("div");
-// 		let suit = document.createElement("div");
-// 		card.className = "card";
-// 		value.className = "value";
-// 		suit.className = "suit " + deck[i].Suit;
-
-// 		value.innerHTML = deck[i].Value;
-// 		card.appendChild(value);
-// 		card.appendChild(suit);
-
-// 		document.getElementById("deck").appendChild(card);
-// 	};
-// };
