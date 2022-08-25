@@ -21,6 +21,16 @@ async function dealCards() {
     console.log("dealCard")
     const cards = await $.ajax(`https://www.deckofcardsapi.com/api/deck/${globalDeck.deck_id}/draw/?count=2`)
 
+    $cardSelection = $('#cards-container');
+    // Using a for-loop for each card
+    for (let i=0; i < cards.remaining; i++) {
+        $card = document.createElement('div'); // Creating a new html element
+        $card.innerText = "card"; // Adding data from the card into the element
+        $card.className = "card"; 
+    
+        $cardSelection.append($card); // Inserting the element into the DOM
+    }
+
     console.log(cards);
     return cards;
 };
