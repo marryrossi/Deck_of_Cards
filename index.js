@@ -17,6 +17,21 @@ async function newDeck() {
     return deck;
 };
 
+async function dealCards() {
+    console.log("dealCard")
+    const cards = await $.ajax(`https://www.deckofcardsapi.com/api/deck/${globalDeck.deck_id}/draw/?count=2`)
+
+    console.log(cards);
+    return cards;
+};
+
+// async function shuffleCards(deckId) {
+//     console.log("deckId:", deckId)
+//     const cardsShuffled = await $.ajax(`https://www.deckofcardsapi.com/api/deck/${deckId}/shuffle/`)
+
+//     return cardsShuffled;
+// };
+
 // Elements reference
 const $newDeckBtn = $('#new-deck-btn');
 const $dealCardsBtn = $('#deal-cards-btn');
@@ -24,3 +39,6 @@ const $dealCardsBtn = $('#deal-cards-btn');
 // Event listener
 $newDeckBtn.on('click', newDeck);
 $dealCardsBtn.on('click', dealCards);
+
+
+
