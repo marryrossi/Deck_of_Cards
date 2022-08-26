@@ -24,3 +24,5 @@ To deploy this project go to
 
 https://inquisitive-cucurucho-51b73e.netlify.app/
 
+## Future Enhancements
+The ability to play Blackjack
