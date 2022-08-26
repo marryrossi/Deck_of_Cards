@@ -1,0 +1,19 @@
+body {
+  background: mediumseagreen;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background: black;
+  color: white;
+  border-radius: 12px;
+}
