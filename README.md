@@ -1,7 +1,7 @@
 
 # Deck of Cards
 
-An application that provides a deck of cards to draw from for future games.
+An application that provides a deck of cards to draw from.
 
 
 
