@@ -9,7 +9,8 @@ An application that provides a deck of cards to draw from.
 Html,
 CSS,
 JavaScript, 
-jQuery
+jQuery,
+Ajax
 
 
 
