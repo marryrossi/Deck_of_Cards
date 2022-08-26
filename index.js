@@ -5,7 +5,7 @@ let globalDeck; // Defining variable
 async function newDeck() {
     // console.log("newDeck")
     const deck = await $.ajax('https://www.deckofcardsapi.com/api/deck/new/');
-    $cardSelection.innerHTML = ""; // this will clears the cards
+    $cardSelection.innerHTML = ""; // clears the cards
     globalDeck = deck;
     console.log(deck); 
 
